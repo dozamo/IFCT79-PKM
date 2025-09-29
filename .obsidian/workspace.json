@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "ea1e5acf1caf0705",
+    "type": "split",
+    "children": [
+      {
+        "id": "57b417302959676d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ef052f6c2405052",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "IPv4 Subnetting - ejemplo 172.31.1.0_24"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "da06c02881d87b77",
+    "type": "split",
+    "children": [
+      {
+        "id": "52f7b940caa7fd9c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0cd9660f83d3f41",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1d67fac216294573",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "55cc269ee492dcf5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 593.5
+  },
+  "right": {
+    "id": "d950d84b06762f0a",
+    "type": "split",
+    "children": [
+      {
+        "id": "dadba7fc4b4bc7a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ff120eb182252bd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for IPv4 Subnetting - ejemplo 172.31.1.0_24"
+            }
+          },
+          {
+            "id": "79ae10ff02ed1b3c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from IPv4 Subnetting - ejemplo 172.31.1.0_24"
+            }
+          },
+          {
+            "id": "ace038e23d8e2114",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "fa9963e9ef2f8730",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of IPv4 Subnetting - ejemplo 172.31.1.0_24"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "e0cd9660f83d3f41",
+  "lastOpenFiles": [
+    "README.md",
+    "+/Desarrollo de mi PKM.md",
+    "Notes/www.googlecalendar.com.md",
+    "Journal/Daily/2025-09-27.md",
+    "Notes/Desarrollo.md",
+    "Notes/devel - debug.md",
+    "Notes/ej_2025-09-29_subnetting.md",
+    "Notes/000_Index.md",
+    "Notes/2025-W37.md",
+    "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
+    "Notes/IPv4 Subnetting - Guía de cálculo.md",
+    "Notes/IPv4 Subnetting - ejemplo completo simple.md",
+    "Notes/IPv4 Subnetting CIDR.md",
+    "Notes/IPv4 Subnetting CIRD - enfoque en Red vs Host.md"
+  ]
+}

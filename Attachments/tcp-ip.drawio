@@ -1,0 +1,61 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Page-1" id="JOJ9XrqmdI2usxW109x9">
+    <mxGraphModel dx="558" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-2" value="bbbbbbbb" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="160" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-6" value="bbbbbb" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-7" value="bbbbbbbb" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-8" value="bbbbbbbb" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-9" value="ddd" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-10" value="ddd" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-11" value="ddd" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-12" value="ddd" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-15" value="Formato decimal punteado" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="690" y="245" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="VTVz5FQ9nExDvxNgZUbf-10" target="VTVz5FQ9nExDvxNgZUbf-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="460" as="sourcePoint" />
+            <mxPoint x="570" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-17" value="&lt;b&gt;Donde&lt;/b&gt;:&lt;div&gt;b: es un digito binario (1 o 0)&lt;br&gt;&lt;div&gt;d: es un numero decimal (un valor decimal {0-9})&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="160" y="298" width="480" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-18" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;IPv4 definido en el RFC 791 (1981)&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Redes clase A&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Una red se define como de clase A, si su bit mas significativo en el cuarto octeto es valor &lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;0&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff3333&quot;&gt;Esto es que todas los IP que van desde 0 a 127 en el cuarto octeto (octeto mas significativo)&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="160" y="370" width="480" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-19" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;0&lt;/font&gt;bbbbbbb" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="160" y="480" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-20" value="bbbbbb" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="480" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-21" value="bbbbbbbb" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTVz5FQ9nExDvxNgZUbf-22" value="bbbbbbbb" style="rounded=1;whiteSpace=wrap;html=1;arcSize=13;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="480" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
