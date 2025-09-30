@@ -29,6 +29,7 @@
       {
         "id": "52f7b940caa7fd9c",
         "type": "tabs",
+        "dimension": 73.02504816955684,
         "children": [
           {
             "id": "e0cd9660f83d3f41",
@@ -68,6 +69,23 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f6840dfef8d5109a",
+        "type": "tabs",
+        "dimension": 26.97495183044316,
+        "children": [
+          {
+            "id": "8009b8411961b0e1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
@@ -127,16 +145,6 @@
               },
               "icon": "lucide-archive",
               "title": "All properties"
-            }
-          },
-          {
-            "id": "8009b8411961b0e1",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
             }
           }
         ],
@@ -255,11 +263,31 @@
   },
   "active": "4ef8492e0109e502",
   "lastOpenFiles": [
+    "+/IFCT79/Ruben-profesor/PC-FTP/Tutorias.jpeg",
+    "+/IFCT79/Ruben-profesor/PC-FTP/SW/Packet_Tracer822_64bit_setup_signed.exe",
+    "+/IFCT79/Ruben-profesor/PC-FTP/SW",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Modulo 1/Tema_1.1.pdf",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Modulo 1/Medios_de_transmision.pdf",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Modulo 1/Dominio de Active Directory o Directorio Activo desde cero en Windows Server 2022.pdf",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Modulo 1",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/a resolver.pkt",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/a Resolver.pdf",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/Thumbs.db",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/Ejercicio_2.png",
+    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/Ejercicio_1_estatico.pkt",
+    "+/IFCT79/Ruben-profesor/Tutorias.jpeg",
+    "+/IFCT79/Ruben-profesor/Ejercicios/Ejercicio_2.png",
+    "+/IFCT79/Ejercicios/Ejercicio_2.png",
+    "+/IFCT79/Tutorias.jpeg",
+    "+/PC-Ruben-profesor/Ejercicios/Ejercicio_2.png",
+    "+/PC-Ruben-profesor/Tutorias.jpeg",
+    "x/PC-Ruben-profesor/Ejercicios/Ejercicio_2.png",
+    "x/PC-Ruben-profesor/Tutorias.jpeg",
+    "x/pc-Ruben-profesor/Tutorias.jpeg",
     "Notes/ej_2025-09-29_subnetting.md",
     "Journal/Daily/2025-09-27.md",
     "Journal/Daily/2025-09-30.md",
     "Notes/2025-09-29.md",
-    "x/Templater/daily-template.md-BETA",
     "Notes/Monday, 29 September 2025.md",
     "Notes/2025-09-29Monday, 29 September 2025.md",
     "x/Templater/daily-template.md",
@@ -270,19 +298,10 @@
     "x/Templater/yearly-template.md",
     "x/Templater/Untitled.md",
     "People/Marco Serafini.md",
-    "x/Templater",
-    "Untitled",
-    "Canvas",
     "Journal/Pomodoro Log.md",
-    "People",
     "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
     "Notes/IPv4 Subnetting - Guía de cálculo.md",
     "Notes/000_Index.md",
-    "+/2025-09-29_caso-estudio-subnetting-multiples-lan.pdf",
-    "+/tcp-ip.drawio",
-    "+/diagrams.drawio",
-    "+/curso-redes.drawio",
-    "+/a-Resolver.drawio",
     "+/Drawing 2025-09-27 14.50.23.excalidraw.md",
     "README.md",
     "+/Desarrollo de mi PKM.md",
