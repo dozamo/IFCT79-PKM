@@ -16,9 +16,9 @@ Packet Tracer: Situación de división en subredes 2
 
 | Dispositivo | Interfaz | Dirección IP | Máscara de subred | Gateway predeterminado |
 |-------------|----------|--------------|-------------------|------------------------|
-| R1          | G0/0     |  172.31.1.3            |    27               | No aplicable           |
-| R1          | S0/0/0   |   172.31.31.225           |   27                | No aplicable           |
-| R2          | G0/0     | 172.31.31.34             |   27                | No aplicable           |
+| R1          | G0/0     |  `172.31.1.3`            |    `27`               | No aplicable           |
+| R1          | S0/0/0   |   172.31.31.225           |   `27`                | No aplicable           |
+| R2          | G0/0     | 172.31.31.34             |   `27`                | No aplicable           |
 | R2          | S0/0/0   |   172.31.31.226           |   27                | No aplicable           |
 | R2          | S0/0/1   | 172.31.31.193             | 27                   | No aplicable           |
 | R3          | G0/0     |   172.31.31.66           |    27               | No aplicable           |
@@ -27,7 +27,7 @@ Packet Tracer: Situación de división en subredes 2
 | R4          | G0/0     |172.31.31.97              |   27                | No aplicable           |
 | R4          | S0/0/0   | 172.31.31.162             | 27                  | No aplicable           |
 | S1          | VLAN 1   | 172.31.1.30             |    27               |   172.31.1.3                     |
-| S2          | VLAN 1   |   172.31.1.62           |   27       172.31.31.34         |                        |
+| S2          | VLAN 1   |   172.31.1.62           |   27         |        172.31.31.34                    |
 | S3          | VLAN 1   |  172.31.1.94            |   27                |    172.31.31.66                 |
 | S4          | VLAN 1   |   172.31.1.126           |                   |                        |
 | PC1         | NIC      |  172.31.1.11          |   27                |     172.31.1.3                   |
