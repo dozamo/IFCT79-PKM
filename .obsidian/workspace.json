@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e06670e4ed34185d",
+        "id": "7fc9c841281a854f",
         "type": "tabs",
         "children": [
           {
-            "id": "02cecc245d2252bc",
+            "id": "4ef8492e0109e502",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journal/Daily/2025-09-30.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2025-09-30"
+              "title": "New tab"
             }
           }
         ]
@@ -257,18 +253,19 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "e0cd9660f83d3f41",
+  "active": "4ef8492e0109e502",
   "lastOpenFiles": [
-    "x/Templater/daily-template.md-BETA",
+    "Notes/ej_2025-09-29_subnetting.md",
+    "Journal/Daily/2025-09-27.md",
     "Journal/Daily/2025-09-30.md",
     "Notes/2025-09-29.md",
+    "x/Templater/daily-template.md-BETA",
     "Notes/Monday, 29 September 2025.md",
     "Notes/2025-09-29Monday, 29 September 2025.md",
     "x/Templater/daily-template.md",
     "Journal/Pomodoro tasks.md",
     "Notes/2025-W40.md",
     "x/Templater/weekly-template.md",
-    "Journal/Daily/2025-09-27.md",
     "x/Templater/monthly-template.md",
     "x/Templater/yearly-template.md",
     "x/Templater/Untitled.md",
@@ -292,7 +289,6 @@
     "Notes/www.googlecalendar.com.md",
     "Notes/Desarrollo.md",
     "Notes/devel - debug.md",
-    "Notes/ej_2025-09-29_subnetting.md",
     "Notes/2025-W37.md"
   ]
 }

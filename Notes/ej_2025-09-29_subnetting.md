@@ -1,4 +1,8 @@
-# Caso de estudio 2
+---
+status: on/pending-delivery
+---
+
+# Caso de estudio *subnetting*
 
 Packet Tracer: Situación de división en subredes 2
 
@@ -44,18 +48,34 @@ En esta actividad, se le asigna la dirección de red `172.31.1.0/24` para que la
 
 Paso 1: Divida la red `172.31.1.0/24` en subredes de acuerdo con la cantidad máxima de hosts que requiere la subred más extensa.
 
-- a. Según la topología, ¿cuántas subredes se necesitan? _______
+- a. Según la topología, ¿cuántas subredes se necesitan? ***7***
 
 ## Resolución
 
 **Especificación inicial**
 
 - IP LAN: `172.31.1.0/24`.
-- Cantidad de subredes iniciales: `7`.
+- Cantidad de subredes iniciales (necesarias): `7`.
 - Cantidad de host por cada subred (LAN) (es la que mas ip host necesita): `14`.
 
 **Resolviendo** (ver formulas en *Anexo/referencias*)
 
+`bits_prestados = 3` (ya que subredes = 2^3 = 8 con lo que cubrimos las 7 subredes que necesitamos)
+`host_por_subred = 2^(5) - 2 = 30` (También cubrimos mas de los 14 host necesarios, para la red de S3)
+`3 = nueva_máscara - 24` => `nueva_máscara = 24 + 3 = 27`  
+`bits_host = 32 - 27 = 5`
+`salto = 2^5 = 32`
+
+|SUB LAN | IP LAN (dirección de red) | Host min | Host max | Broadcast | Host disponibles |
+|:--            |:--                        |:--       |:--       |:--        |:-- |      
+|1 | `/27` | `.` | `.` | `.` | `30` |
+|2 | `/27`| `.`| `.` | `.` | `30` |
+|3 | `/27`| `.`| `.` | `.` | `30` |
+|4 | `/27`| `.`| `.` | `.` | `30` |
+|5 | `/27`| `.`| `.` | `.` | `30` |
+|6 | `/27`| `.`| `.` | `.` | `30` |
+|7 | `/27`| `.`| `.` | `.` | `30` |
+|8 | `/27`| `.`| `.` | `.` | `30` |
 
 # Anexo / referencias
 
