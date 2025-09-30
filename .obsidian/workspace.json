@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "57b417302959676d",
+        "id": "e06670e4ed34185d",
         "type": "tabs",
         "children": [
           {
-            "id": "5ef052f6c2405052",
+            "id": "0e6a6e8a8ce0e5e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 593.5
+    "width": 376.5
   },
   "right": {
     "id": "d950d84b06762f0a",
@@ -164,13 +164,15 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false
     }
   },
-  "active": "e0cd9660f83d3f41",
+  "active": "0e6a6e8a8ce0e5e4",
   "lastOpenFiles": [
+    "Notes/IPv4 Subnetting - Guía de cálculo.md",
+    "Notes/000_Index.md",
+    "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
     "+/2025-09-29_caso-estudio-subnetting-multiples-lan.pdf",
     "+/tcp-ip.drawio",
     "+/diagrams.drawio",
@@ -184,10 +186,7 @@
     "Notes/Desarrollo.md",
     "Notes/devel - debug.md",
     "Notes/ej_2025-09-29_subnetting.md",
-    "Notes/000_Index.md",
     "Notes/2025-W37.md",
-    "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
-    "Notes/IPv4 Subnetting - Guía de cálculo.md",
     "Notes/IPv4 Subnetting - ejemplo completo simple.md",
     "Notes/IPv4 Subnetting CIDR.md",
     "Notes/IPv4 Subnetting CIRD - enfoque en Red vs Host.md"
