@@ -20,10 +20,10 @@ Packet Tracer: Situación de división en subredes 2
 | R1          | S0/0/0   |   172.31.31.225           |   27                | No aplicable           |
 | R2          | G0/0     | 172.31.31.34             |   27                | No aplicable           |
 | R2          | S0/0/0   |   172.31.31.226           |   27                | No aplicable           |
-| R2          | S0/0/1   |              |                   | No aplicable           |
+| R2          | S0/0/1   | 172.31.31.193             | 27                   | No aplicable           |
 | R3          | G0/0     |   172.31.31.66           |    27               | No aplicable           |
-| R3          | S0/0/0   |              |                   | No aplicable           |
-| R3          | S0/0/1   |            |                   | No aplicable           |
+| R3          | S0/0/0   | 172.31.31.161             | 27                   | No aplicable           |
+| R3          | S0/0/1   |  172.31.31.194          | 27                  | No aplicable           |
 | R4          | G0/0     |172.31.31.97              |   27                | No aplicable           |
 | R4          | S0/0/0   |              |                   | No aplicable           |
 | S1          | VLAN 1   |              |                   |                        |
