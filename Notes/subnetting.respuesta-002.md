@@ -1,5 +1,6 @@
 ---
 status: on/delivery-pending
+tags: ["IFCT79"]
 ---
 
 # Caso de estudio *subnetting*
