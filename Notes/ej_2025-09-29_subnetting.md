@@ -17,7 +17,7 @@ Packet Tracer: Situación de división en subredes 2
 | Dispositivo | Interfaz | Dirección IP | Máscara de subred | Gateway predeterminado |
 |-------------|----------|--------------|-------------------|------------------------|
 | R1          | G0/0     |  172.31.1.3            |    27               | No aplicable           |
-| R1          | S0/0/0   |              |                   | No aplicable           |
+| R1          | S0/0/0   |   172.31.31.225           |   27                | No aplicable           |
 | R2          | G0/0     | 172.31.31.34             |   27                | No aplicable           |
 | R2          | S0/0/0   |              |                   | No aplicable           |
 | R2          | S0/0/1   |              |                   | No aplicable           |
