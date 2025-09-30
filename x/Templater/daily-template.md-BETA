@@ -1,0 +1,38 @@
+---
+tags: daily_note
+weight:
+meditation: false
+exercise: false
+---
+# <% moment(tp.file.title, "YYYY-MM-DD").format("dddd, DD MMMM YYYY") %>
+
+:LiArrowLeft: [[<% fileDate = moment(tp.file.title, "YYYY-MM-DD").subtract(1, "d").format("YYYY-MM-DD") %>]] [[<% fileDate = moment(tp.file.title, "YYYY-MM-DD").subtract(1, "d").format("dddd, DD MMMM YYYY") %>|<% moment(tp.file.title, "YYYY-MM-DD").subtract(1, "d").format("YYYY") %>-W<% moment(tp.file.title, "YYYY-MM-DD").add(-1, "d").week() %>]] | [[Journal/Daily/]]<% fileDate = moment(tp.file.title, "YYYY-MM-DD").add(1, "d").format("YYYY-MM-DD") %><% fileDate = moment(tp.file.title, "YYYY-MM-DD").add(1, "d").format("dddd, DD MMMM YYYY") %> :LiArrowRight:
+
+---
+
+[[<% fileDate = moment(tp.file.title, 'YYYY-MM-DD').subtract(1, 'd').format('YYYY-MM-DD') %>|Yesterday]] | [[<% moment(tp.file.title,'YYYY-MM-DD').format("YYYY") %>-W<% moment(tp.file.title, "YYYY-MM-DD").add(-1,'days').week() %>]] | [[<% fileDate = moment(tp.file.title, 'YYYY-MM-DD').add(1, 'd').format('YYYY-MM-DD') %>|Tomorrow]]
+
+---
+
+[[<% tp.date.now("YYYY-MM-DD", "-1d") %>]] | **[Semana]** [[<% tp.date.now("gggg-[W]ww") %>]] | **[Mañana]** [[<% tp.date.now("YYYY-MM-DD", "+1d") %>]]
+
+
+> [!time]- Este día...
+> ```dataview
+> LIST
+> FROM "Journal/Daily"
+> WHERE file.day.month = date(today).month
+> 	AND file.day.day = date(today).day
+> 	AND file.day.year != date(today).year
+> SORT file.day desc
+> ```
+
+## Registro diario
+
+## Notas
+
+<% tp.file.cursor() %>
+
+### ¿Cómo me siento hoy?
+
+### ...

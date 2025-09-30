@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0e6a6e8a8ce0e5e4",
+            "id": "02cecc245d2252bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
+                "file": "Journal/Daily/2025-09-30.md",
                 "mode": "preview",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "IPv4 Subnetting - ejemplo 172.31.1.0_24"
+              "title": "2025-09-30"
             }
           }
         ]
@@ -87,40 +87,8 @@
       {
         "id": "dadba7fc4b4bc7a9",
         "type": "tabs",
+        "dimension": 35.74074074074074,
         "children": [
-          {
-            "id": "6ff120eb182252bd",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for IPv4 Subnetting - ejemplo 172.31.1.0_24"
-            }
-          },
-          {
-            "id": "79ae10ff02ed1b3c",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from IPv4 Subnetting - ejemplo 172.31.1.0_24"
-            }
-          },
           {
             "id": "ace038e23d8e2114",
             "type": "leaf",
@@ -142,21 +110,139 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
+                "file": "x/Templater/daily-template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of IPv4 Subnetting - ejemplo 172.31.1.0_24"
+              "title": "Outline of daily-template"
+            }
+          },
+          {
+            "id": "6171c04cb30fb068",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "8009b8411961b0e1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "36d4b6e76a2afad5",
+        "type": "tabs",
+        "dimension": 18.51851851851852,
+        "children": [
+          {
+            "id": "41ac9932e3acc032",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "x/Templater/daily-template.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of daily-template"
+            }
+          },
+          {
+            "id": "6ff120eb182252bd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "x/Templater/daily-template.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for daily-template"
+            }
+          },
+          {
+            "id": "79ae10ff02ed1b3c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "176de86cc04d2748",
+        "type": "tabs",
+        "dimension": 45.74074074074074,
+        "children": [
+          {
+            "id": "9fd23573c38767c1",
+            "type": "leaf",
+            "state": {
+              "type": "timer-view",
+              "state": {},
+              "icon": "timer",
+              "title": "Timer"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,14 +251,36 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "pomodoro-timer:Toggle timer panel": false,
+      "templater-obsidian:Templater": false,
+      "callout-manager:Insert Callout": false
     }
   },
-  "active": "0e6a6e8a8ce0e5e4",
+  "active": "e0cd9660f83d3f41",
   "lastOpenFiles": [
+    "x/Templater/daily-template.md-BETA",
+    "Journal/Daily/2025-09-30.md",
+    "Notes/2025-09-29.md",
+    "Notes/Monday, 29 September 2025.md",
+    "Notes/2025-09-29Monday, 29 September 2025.md",
+    "x/Templater/daily-template.md",
+    "Journal/Pomodoro tasks.md",
+    "Notes/2025-W40.md",
+    "x/Templater/weekly-template.md",
+    "Journal/Daily/2025-09-27.md",
+    "x/Templater/monthly-template.md",
+    "x/Templater/yearly-template.md",
+    "x/Templater/Untitled.md",
+    "People/Marco Serafini.md",
+    "x/Templater",
+    "Untitled",
+    "Canvas",
+    "Journal/Pomodoro Log.md",
+    "People",
+    "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
     "Notes/IPv4 Subnetting - Guía de cálculo.md",
     "Notes/000_Index.md",
-    "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
     "+/2025-09-29_caso-estudio-subnetting-multiples-lan.pdf",
     "+/tcp-ip.drawio",
     "+/diagrams.drawio",
@@ -182,13 +290,9 @@
     "README.md",
     "+/Desarrollo de mi PKM.md",
     "Notes/www.googlecalendar.com.md",
-    "Journal/Daily/2025-09-27.md",
     "Notes/Desarrollo.md",
     "Notes/devel - debug.md",
     "Notes/ej_2025-09-29_subnetting.md",
-    "Notes/2025-W37.md",
-    "Notes/IPv4 Subnetting - ejemplo completo simple.md",
-    "Notes/IPv4 Subnetting CIDR.md",
-    "Notes/IPv4 Subnetting CIRD - enfoque en Red vs Host.md"
+    "Notes/2025-W37.md"
   ]
 }

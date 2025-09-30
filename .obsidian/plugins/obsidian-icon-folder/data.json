@@ -1,0 +1,69 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiInbox",
+      "SiCanvas",
+      "TiTemplate",
+      "SiExpertsexchange",
+      "TiNotes"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "Attachments": {
+    "iconName": "TiPaperclip",
+    "iconColor": "#010aff"
+  },
+  "Journal": {
+    "iconName": "LiCalendarDays",
+    "iconColor": "#010aff"
+  },
+  "People": {
+    "iconName": "TiMoodHappy",
+    "iconColor": "#010aff"
+  },
+  "Notes": {
+    "iconName": "TiNotes",
+    "iconColor": "#010aff"
+  },
+  "x": {
+    "iconName": "SiExpertsexchange",
+    "iconColor": "#010aff"
+  },
+  "x/Templater": {
+    "iconName": "TiTemplate",
+    "iconColor": "#010aff"
+  },
+  "Canvas": {
+    "iconName": "SiCanvas",
+    "iconColor": "#010aff"
+  },
+  "+": {
+    "iconName": "LiInbox",
+    "iconColor": "#010aff"
+  }
+}

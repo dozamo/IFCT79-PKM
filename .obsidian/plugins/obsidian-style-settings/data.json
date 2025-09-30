@@ -1,0 +1,12 @@
+{
+  "minimal-style@@metadata-dividers": true,
+  "minimal-style@@sidebar-tabs-style": "sidebar-tabs-wide",
+  "minimal-style@@row-lines": true,
+  "minimal-style@@col-lines": true,
+  "minimal-style@@table-lines": true,
+  "minimal-style@@row-alt": true,
+  "minimal-style@@table-nowrap": true,
+  "minimal-style@@row-hover": true,
+  "minimal-style@@tabs-style": "tabs-modern",
+  "minimal-style@@tag-radius": "4px"
+}

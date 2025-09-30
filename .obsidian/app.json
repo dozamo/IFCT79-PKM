@@ -1,7 +1,9 @@
 {
-  "livePreview": false,
+  "livePreview": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "Notes",
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "Attachments"
+  "attachmentFolderPath": "Attachments",
+  "showInlineTitle": false,
+  "readableLineLength": false
 }
