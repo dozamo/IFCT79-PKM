@@ -3,3 +3,4 @@
 /x/*
 !/x/Templater/
 *.drawio.bkp
+*.drawio.dtmp
