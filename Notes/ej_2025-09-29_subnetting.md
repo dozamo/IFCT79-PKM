@@ -1,5 +1,5 @@
 ---
-status: on/pending-delivery
+status: on/delivery-pending
 ---
 
 # Caso de estudio *subnetting*
