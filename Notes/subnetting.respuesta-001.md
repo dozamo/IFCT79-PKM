@@ -1,17 +1,16 @@
 ---
-status: on/delivery-pending
+status: on/delivery-ok
 tags: ["IFCT79"]
+parent:
+type_note: answer
+topic: IFCT79
+author: dzamo
 ---
 # Packet Tracer: Situación de división en subredes 2
 
 ## Topología
 
-***[Situación inicial]***
-
-![Caso de estudio 2 - topología](../Attachments/subnetting.ejercicio.png)
-
-
-***[Respuesta topología de esta versión 1]***
+***[Respuesta topología versión 1 resuelta en este documento]***
 
 En este documento se detalla como se ha cálculado esta primera topología representada a continuación. Esta es:
 
@@ -19,7 +18,7 @@ En este documento se detalla como se ha cálculado esta primera topología repre
 
 [subnetting-respuesta-001]:../Attachments/subnetting.respuesta-001.png
 
-## Tabla de direccionamiento
+## Tabla de direccionamiento resultante en esta versión 1
 
 | Dispositivo | Interfaz | Dirección IP | Máscara de subred | Gateway predeterminado |
 |-------------|----------|--------------|-------------------|------------------------|

@@ -1,10 +1,11 @@
 ---
-status: on/delivery-pending
+status: on/delivery-ok
 tags: ["IFCT79"]
-parent:
 type_note: question
-topic: IFCT79
 parent:
+topic: IFCT79
+author: dzamo
+description: "Packet Tracer: Situación división en subredes 2"
 ---
 
 # Packet Tracer: Situación de división en subredes 2
