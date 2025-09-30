@@ -16,24 +16,24 @@ Packet Tracer: Situación de división en subredes 2
 
 | Dispositivo | Interfaz | Dirección IP | Máscara de subred | Gateway predeterminado |
 |-------------|----------|--------------|-------------------|------------------------|
-| R1          | G0/0     |              |                   | No aplicable           |
+| R1          | G0/0     |  172.31.1.3            |    27               | No aplicable           |
 | R1          | S0/0/0   |              |                   | No aplicable           |
-| R2          | G0/0     |              |                   | No aplicable           |
+| R2          | G0/0     | 172.31.31.34             |   27                | No aplicable           |
 | R2          | S0/0/0   |              |                   | No aplicable           |
 | R2          | S0/0/1   |              |                   | No aplicable           |
-| R3          | G0/0     |              |                   | No aplicable           |
+| R3          | G0/0     |   172.31.31.66           |    27               | No aplicable           |
 | R3          | S0/0/0   |              |                   | No aplicable           |
-| R3          | S0/0/1   |              |                   | No aplicable           |
-| R4          | G0/0     |              |                   | No aplicable           |
+| R3          | S0/0/1   |            |                   | No aplicable           |
+| R4          | G0/0     |172.31.31.97              |   27                | No aplicable           |
 | R4          | S0/0/0   |              |                   | No aplicable           |
 | S1          | VLAN 1   |              |                   |                        |
 | S2          | VLAN 1   |              |                   |                        |
 | S3          | VLAN 1   |              |                   |                        |
 | S4          | VLAN 1   |              |                   |                        |
-| PC1         | NIC      |              |                   |                        |
-| PC2         | NIC      |              |                   |                        |
-| PC3         | NIC      |              |                   |                        |
-| PC4         | NIC      |              |                   |                        |
+| PC1         | NIC      |  172.31.1.11          |   27                |                        |
+| PC2         | NIC      |   172.31.31.38           |   27                |                        |
+| PC3         | NIC      |   172.31.31.68           |    27               |                        |
+| PC4         | NIC      |  172.31.31.98            |  27                 |                        |
 
 ## Objetivos
 
