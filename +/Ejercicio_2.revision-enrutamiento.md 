@@ -1,0 +1,25 @@
+# Revisión conf. Routers (según AIStudio)
+
+- Estado de las interfaces:
+  ```code Cisco
+  Router#show ip interface brief
+  ```
+
+- Adyacencias OSPF:
+
+  ```code Cisco
+  Router#show ip ospf neighbor
+  ```
+
+- Tabla de Enrutamiento OSPF:
+
+  ```code Cisco
+  Router#show ip route ospf
+  ```
+
+Verifica que cada router haya aprendido las redes remotas a través de OSPF (marcadas con 'O').
+
+- Conectividad entre PCs:
+
+  - Desde cualquier PC, haz ping a otra PC (por ejemplo, desde PC0 a PC2). Los pings deberían ser exitosos.
+  - Prueba la redundancia: Deshabilita un enlace serial (por ejemplo, el enlace entre Router1 y Router4) y luego intenta hacer ping entre PCs. OSPF debería recalcular automáticamente las rutas y el tráfico debería seguir un camino alternativo. Vuelve a habilitar el enlace para ver cómo OSPF se ajusta.
