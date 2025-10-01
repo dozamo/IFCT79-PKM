@@ -13,7 +13,7 @@ description: "Packet Tracer: Situación división en subredes 2"
 
 ## Topología
 
-![Caso de estudio 2 - topología](../images/subnetting.ejercicio.png)
+![Caso de estudio 2 - topología](images/subnetting.ejercicio.png)
 
 ## Tabla de direccionamiento
 

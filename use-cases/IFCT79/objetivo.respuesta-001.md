@@ -16,7 +16,7 @@ description: ""
 
 ![Topología versión 1][objetivo-respuesta-001]
 
-[objetivo-respuesta-001]: ../images/objetivo.respuesta-001.png
+[objetivo-respuesta-001]: images/objetivo.respuesta-001.png
 
 ## Objetivos
 

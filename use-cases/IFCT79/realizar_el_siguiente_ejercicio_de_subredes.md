@@ -13,17 +13,17 @@ description: ""
 
 Realizar el siguiente ejercicio de subredes
 
-## Enunciado 
+## Enunciado
 
 Se desea configurar cada una de las redes de este esquema para que se cumplan las condiciones marcadas en los rectangulos grises.
 
-![Realizar el siguiente ejercicio de subredes](../images/realizar_el_siguiente_ejercicio_de_subredes.png)
+![Realizar el siguiente ejercicio de subredes](images/realizar_el_siguiente_ejercicio_de_subredes.png)
 
 # Análisis y resolución
 
 ## RED 1
 
-### Enunciado
+### Requerimiento RED 1
 
 8 subredes con el máximo número de host por cada una de ellas
 
@@ -51,7 +51,7 @@ Se desea configurar cada una de las redes de este esquema para que se cumplan la
 
 ## RED 2
 
-### Enunciado
+### Requerimiento RED 2
 
 10 Redes y máximo números de equipos
 
@@ -90,7 +90,7 @@ salto = 2^bits_host
 
 ## RED 3
 
-### Enunciado
+### Requerimiento RED 3
 
 Calcular el subnetting para 17 Redes y Máximo numero de Equipos
 
