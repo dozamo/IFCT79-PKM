@@ -21,7 +21,7 @@ En este documento se detalla como se ha cálculado esta segunda topología repre
 
 ![Representación respuesta 002][subnetting-respuesta-002]
 
-[subnetting-respuesta-002]:../attachments/subnetting.respuesta-002.png
+[subnetting-respuesta-002]:../images/subnetting.respuesta-002.png
 
 ### Tabla de direccionamiento resultante
 

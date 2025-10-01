@@ -17,7 +17,7 @@ En este documento se detalla como se ha cálculado esta primera topología repre
 
 ![Representación respuesta 001][subnetting-respuesta-001]
 
-[subnetting-respuesta-001]:../attachments/subnetting.respuesta-001.png
+[subnetting-respuesta-001]:../images/subnetting.respuesta-001.png
 
 ## Tabla de direccionamiento resultante en esta versión 1
 

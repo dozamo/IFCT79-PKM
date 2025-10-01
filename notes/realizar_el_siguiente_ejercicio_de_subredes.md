@@ -17,7 +17,7 @@ Realizar el siguiente ejercicio de subredes
 
 Se desea configurar cada una de las redes de este esquema para que se cumplan las condiciones marcadas en los rectangulos grises.
 
-![Realizar el siguiente ejercicio de subredes](../attachments/realizar_el_siguiente_ejercicio_de_subredes.png)
+![Realizar el siguiente ejercicio de subredes](../images/realizar_el_siguiente_ejercicio_de_subredes.png)
 
 # Análisis y resolución
 

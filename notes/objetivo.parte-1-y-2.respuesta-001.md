@@ -159,6 +159,27 @@ En esta conexión punto a punto solo se necesitan 2 (dos) IP pues es el total de
 
 Con el anterior análisis quedan sugerido el diseño del esquema de direccionamiento IP de las cinco subredes para implementar el escenario. El diagrama es mostrado en [topología versión 1][objetivo-respuesta-001].
 
+### Asignación de IP
+
+## Tabla de direccionamiento
+
+| Dispositivo | Interfaz | Dirección IP | Máscara de subred | Gateway predeterminado |
+|-------------|----------|--------------|-------------------|------------------------|
+| R1          | G0/0     | `192.168.100.30` | `27`          | No aplicable           |
+| R1          | G0/1     | `192.168.100.62` | `27`          | No aplicable           |
+| R1          | S0/0/0   | `192.168.100.5`  | `30`          | No aplicable           |
+| R2          | G0/0     | `192.168.100.94` | `27`          | No aplicable           |
+| R2          | G0/1     | `192.168.100.126` | `27`         | No aplicable           |
+| R2          | S0/0/0   | `192.168.100.6`   | `30`         | No aplicable           |
+| S1          |          | `192.168.100.29`  | `27`         |                        |
+| S2          |          | `192.168.100.61`  | `27`         |                        |
+| S3          |          | `192.168.100.93`  | `27`         |                        |
+| S4          |          | `192.168.100.125` | `27`         |                        |
+| PC1         | NIC      | `192.168.100.5`   | `27`         |                        |
+| PC2         | NIC      | `192.168.100.37`  | `27`         |                     |
+| PC3         | NIC      | `192.168.100.69`  | `27`         |                   |
+| PC4         | NIC      | `192.168.100.101` | `27`         |                     |
+
 # Anexo / referencias
 
 ## Documentación consultada

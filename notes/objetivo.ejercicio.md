@@ -16,7 +16,7 @@ description: ""
 
 ![Packet Tracer - situación de división en subredes 1][objetivo-ejercicio]
 
-[objetivo-ejercicio]: ../attachments/objetivo.ejercicio.png
+[objetivo-ejercicio]: ../images/objetivo.ejercicio.png
 
 ## Objetivos
 
