@@ -4,3 +4,4 @@
 !/x/Templater/
 *.drawio.bkp
 *.drawio.dtmp
+/Notes/*.pdf
