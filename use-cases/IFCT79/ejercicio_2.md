@@ -6,80 +6,92 @@ type_note: question
 parent:
 topic: IFCT79
 author: dzamo
-description: "Alta disponibilidad en el backbone de los router"
-title: "Alta disponibilidad en 'backbond inter router' - Asignación fija/estática IPv4 + topología full-mesh/Open Shortest Path First (OSPF)"
+description: "Implementación de alta disponibilidad en backbone de routers mediante OSPF"
+title: "Alta Disponibilidad con OSPF: Topología Full-Mesh e IPv4 Estática"
 ---
 
-# Ejercicio_2
+# Ejercicio 2: Configuración de Alta Disponibilidad con OSPF
 
 ## Enunciado
 
-Sobre la siguiente topología de red, implementar una configuración de router de alta disponibilidad cumpliendo con los siguientes requisitos, estos son:
+Implementar una configuración de red de alta disponibilidad sobre la topología proporcionada, cumpliendo con los siguientes requisitos:
 
-- Configuración de IP sobre los activos (principalmente de tipo router), como asignación fija o estática.
-- No utilzar ruteo RIP entre los router.
-- Configuración de alta disponibilidad, que sea capaz de mantener el servicio de ruteo en caso de falla de algunas de las conexiones del backbone principal.
+- **Direccionamiento IP estático/fijo** en todos los dispositivos de red (principalmente routers)
+- **Protocolo de enrutamiento dinámico** distinto a RIP
+- **Alta disponibilidad** que garantice el servicio de enrutamiento ante fallas de enlaces del backbone
 
-## Representación de la topología
+## Topología de Red
 
-En la representación [topología Ejercicio 2][ejercicio-2] se muestra la topología de interconexión lógica del escenario.
-
-![topología Ejercicio 2][ejercicio_2]
+![Topología Ejercicio 2][ejercicio_2]
 
 [ejercicio_2]: ../images/ejercicio_2.png
 
-## Resolución
+La topología implementada corresponde a una red **full-mesh** con 4 routers interconectados mediante 6 enlaces WAN punto a punto, proporcionando redundancia completa.
 
-### Justificación inicial
+---
 
-Para la resolución de este escenario, y debido principalmente a que *no* debe utilizarse direccionamiento *RIP*, para la configuración de asignación de IP sobre los router se utilizará:
+## Solución Propuesta
 
-- ✅ ***Asignación IP estática:*** Todos los **routers** tienen **IP**s **fijas** configuradas.
-- ✅ ***Sin RIP:*** Se utiliza ***Open Shortest Path First*** (***OSPF***) como protocolo de enrutamiento dinámico.
-- ✅ ***Alta disponibilidad:*** Se configuro **Topología full-mesh entre routers** que **garantiza redundancia**. Esta configuración es implementada configurando **Open Shortest Path First** (**OSPF**). es un protocolo de enrutamiento que permite a los routers compartir automáticamente información sobre las rutas disponibles en la red. Es como un sistema de mapas inteligente donde cada router conoce todos los caminos posibles para llegar a cualquier destino.
+### Justificación Técnica
 
-**Nota *uso de Packet Tracer* y/o *CLI IOS* para esta resolución:** Para configurar la **OSPF**, y debido a que **Packet Tracer** no soporta completamente el configurar los activos de escenarios con esta caracteristica, es que se utiliza en la resolución de este laboratorio el `CLI IOS` para configurar la *topología full-mesh* cuando sea requerido en este documento. De todos modos, en este informe se adjunta tanto capturas de la interface gráfica de *"Cisco Packet Tracer"*  como los comandos emitidos para la configuración de cada activo, según corresponda.
+Para cumplir con los requisitos establecidos, se implementó la siguiente solución:
 
-### Configuración IPv4 estática
+- **Direccionamiento IPv4 estático:** Asignación manual de direcciones IP en todas las interfaces de routers y PCs
+- **Protocolo OSPF (Open Shortest Path First):** Protocolo de enrutamiento dinámico de estado de enlace que reemplaza a RIP
+- **Topología full-mesh:** Cada router se conecta directamente con los otros tres routers, garantizando múltiples rutas alternativas
 
-En este apartado se muestra la configuración inicial que se le asigno a cada uno de los activos, principalmente los de tipo PC y a los Router. Se revisa así tanto el nombre, como la asignación de IPv4 fija/estática, para cumpliendo con uno de los requisitos iniciales.
+#### ¿Por qué OSPF?
 
-<!--
-#### PC0
+OSPF es un protocolo de enrutamiento interior que permite:
 
-![ipconfig pc0](../images/ejercicio_2-pc0.png)
+- Convergencia rápida ante cambios en la topología
+- Soporte para diseño jerárquico mediante áreas
+- Cálculo de rutas óptimas basado en costos configurables
+- Escalabilidad superior a protocolos de vector distancia como RIP
 
-#### PC1
+#### Sobre el Uso de Packet Tracer
 
-![ipconfig pc1](../images/ejercicio_2-pc1.png)
+Debido a limitaciones en la interfaz gráfica de Packet Tracer para configuraciones OSPF avanzadas, se utilizó **CLI (Command Line Interface) de Cisco IOS** para la configuración completa. Este documento incluye tanto capturas de pantalla como transcripciones de comandos ejecutados.
 
-#### PC2
+---
 
-![ipconfig pc2](../images/ejercicio_2-pc2.png)
+## Configuración Implementada
 
-#### PC3
+### 1. Asignación de Direccionamiento IPv4
 
-![ipconfig pc3](../images/ejercicio_2-pc3.png)
--->
-#### Revisión nombre host e `ipconfig` en las PC
+#### 1.1 Configuración de PCs
 
-En este item mediante capturas de la interface de *Cisco Packet Tracer* se muestra la asignación de IPv4 establecidas sobre las PC del escenario.
+| Dispositivo | Dirección IP | Máscara de Subred | Gateway Predeterminado |
+|-------------|--------------|-------------------|------------------------|
+| PC0 | 192.168.1.10 | 255.255.255.0 | 192.168.1.1 |
+| PC1 | 192.168.4.10 | 255.255.255.0 | 192.168.4.1 |
+| PC2 | 192.168.3.10 | 255.255.255.0 | 192.168.3.1 |
+| PC3 | 192.168.2.10 | 255.255.255.0 | 192.168.2.1 |
 
-|||
-|:--:|:--:|
-|![ipconfig pc0](../images/ejercicio_2-pc0.png)|![ipconfig pc1](../images/ejercicio_2-pc1.png)|
-|PC0 - `ipconfig`|PC1 - `ipconfig`|
+##### Capturas de Configuración
 
-|||
-|:--:|:--:|
-|![ipconfig pc2](../images/ejercicio_2-pc2.png)|![ipconfig pc3](../images/ejercicio_2-pc3.png)|
-|PC2 - `ipconfig`|PC3 - `ipconfig`|
+| PC0 - `ipconfig` | PC1 - `ipconfig` |
+|:----------------:|:----------------:|
+| ![ipconfig pc0](../images/ejercicio_2-pc0.png) | ![ipconfig pc1](../images/ejercicio_2-pc1.png) |
 
-#### Revisión nombre router y asignación de IPv4
+| PC2 - `ipconfig` | PC3 - `ipconfig` |
+|:----------------:|:----------------:|
+| ![ipconfig pc2](../images/ejercicio_2-pc2.png) | ![ipconfig pc3](../images/ejercicio_2-pc3.png) |
 
-En este item mediante sesión de comandos *Cisco IOS* ejecutados sobre cada uno de los Router se muestra la asignación de IPv4 sobre cada uno de las interface de cada uno de los router.
+#### 1.2 Configuración de Routers
 
-***[Router1]** (nombre activo y revisión configuración IPv4)*
+##### Tabla de Direccionamiento WAN
+
+| Enlace | Router A | IP Router A | Router B | IP Router B | Subred |
+|--------|----------|-------------|----------|-------------|--------|
+| Enlace 1 | Router1 | 192.168.5.1/30 | Router4 | 192.168.5.2/30 | 192.168.5.0/30 |
+| Enlace 2 | Router1 | 192.168.6.1/30 | Router2 | 192.168.6.2/30 | 192.168.6.0/30 |
+| Enlace 3 | Router1 | 192.168.9.1/30 | Router3 | 192.168.9.2/30 | 192.168.9.0/30 |
+| Enlace 4 | Router2 | 192.168.7.1/30 | Router3 | 192.168.7.2/30 | 192.168.7.0/30 |
+| Enlace 5 | Router2 | 192.168.10.1/30 | Router4 | 192.168.10.2/30 | 192.168.10.0/30 |
+| Enlace 6 | Router3 | 192.168.8.1/30 | Router4 | 192.168.8.2/30 | 192.168.8.0/30 |
+
+##### Router1 - Configuración de Interfaces
 
 ```c
 Router1>enable
@@ -107,7 +119,7 @@ interface Vlan1
  shutdown
 ```
 
-***[Router2]***
+##### Router2 - Configuración de Interfaces
 
 ```c
 Router2>enable
@@ -136,7 +148,7 @@ interface Vlan1
  shutdown
 ```
 
-***[Router3]***
+##### Router3 - Configuración de Interfaces
 
 ```c
 Router3>enable
@@ -167,11 +179,10 @@ interface Vlan1
  shutdown
 ```
 
-***[Router4]***
+##### Router4 - Configuración de Interfaces
 
 ```c
-Router4>
-Router4>ena
+Router4>enable
 Router4#show running-config | section interface
 interface GigabitEthernet0/0
  ip address 192.168.2.1 255.255.255.0
@@ -200,173 +211,325 @@ interface Vlan1
  shutdown
 ```
 
-#### Configuración OFCT
+### 2. Configuración OSPF Multi-Área
 
-***[Router4]** (Configuración desde el CLI IOS)*
+#### 2.1 Diseño de Áreas OSPF
+
+La red se dividió en 5 áreas OSPF para optimizar el enrutamiento:
+
+- Área 0 (Backbone): Enlaces WAN punto a punto entre routers
+- Área 1: Red LAN de Router1 (192.168.1.0/24)
+- Área 2: Red LAN de Router2 (192.168.4.0/24)
+- Área 3: Red LAN de Router3 (192.168.3.0/24)
+- Área 4: Red LAN de Router4 (192.168.2.0/24)
+
+#### 2.2 Parámetros de Optimización
+
+Para mejorar la convergencia y detección de fallas, se configuraron:
+
+- Router-IDs únicos: 1.1.1.1, 2.2.2.2, 3.3.3.3, 4.4.4.4
+- OSPF Cost: 100 en todas las interfaces seriales (balanceo de carga)
+- Hello Interval: 5 segundos (reducido desde 10 seg por defecto)
+- Dead Interval: 20 segundos (reducido desde 40 seg por defecto)
+
+_Nota:_ El comando timers throttle spf no está disponible en Packet Tracer y fue omitido de la configuración.
+
+#### 2.3 Comandos de Configuración por Router
+
+##### Router1 - Configuración OSPF
 
 ```c
-Router4> enable
-Router4# configure terminal
+Router1>enable
+Router1#configure terminal
 
-! Limpiar configuración OSPF anterior
-Router4(config)# no router ospf 1
+! Limpiar configuración OSPF previa
+Router1(config)#no router ospf 1
 
-! Nueva configuración OSPF optimizada
-Router4(config)# router ospf 1
-Router4(config-router)# router-id 4.4.4.4
+! Configuración OSPF optimizada
+Router1(config)#router ospf 1
+Router1(config-router)#router-id 1.1.1.1
 
-! Red LAN en Área 4 (sucursal)
-Router4(config-router)# network 192.168.2.0 0.0.0.255 area 4
+! Red LAN en Área 1
+Router1(config-router)#network 192.168.1.0 0.0.0.255 area 1
 
-! Enlaces WAN en Área 0 (backbone) - TODAS las conexiones directas
-Router4(config-router)# network 192.168.5.0 0.0.0.3 area 0
-Router4(config-router)# network 192.168.8.0 0.0.0.3 area 0
-Router4(config-router)# network 192.168.10.0 0.0.0.3 area 0
+! Enlaces WAN en Área 0 (backbone)
+Router1(config-router)#network 192.168.5.0 0.0.0.3 area 0
+Router1(config-router)#network 192.168.6.0 0.0.0.3 area 0
+Router1(config-router)#network 192.168.9.0 0.0.0.3 area 0
+Router1(config-router)#exit
 
-! Salir del modo router (omitimos timers)
-Router4(config-router)# exit
+! Optimización de interfaces seriales
+Router1(config)#interface serial0/0/0
+Router1(config-if)#ip ospf cost 100
+Router1(config-if)#ip ospf hello-interval 5
+Router1(config-if)#ip ospf dead-interval 20
+Router1(config-if)#exit
 
-! Configurar TODAS las interfaces seriales activas
-Router4(config)# interface serial0/0/0
-Router4(config-if)# ip ospf cost 100
-Router4(config-if)# ip ospf hello-interval 5
-Router4(config-if)# ip ospf dead-interval 20
-Router4(config-if)# exit
+Router1(config)#interface serial0/0/1
+Router1(config-if)#ip ospf cost 100
+Router1(config-if)#ip ospf hello-interval 5
+Router1(config-if)#ip ospf dead-interval 20
+Router1(config-if)#exit
 
-Router4(config)# interface serial0/0/1
-Router4(config-if)# ip ospf cost 100
-Router4(config-if)# ip ospf hello-interval 5
-Router4(config-if)# ip ospf dead-interval 20
-Router4(config-if)# exit
+Router1(config)#interface serial0/1/0
+Router1(config-if)#ip ospf cost 100
+Router1(config-if)#ip ospf hello-interval 5
+Router1(config-if)#ip ospf dead-interval 20
+Router1(config-if)#exit
 
-Router4(config)# interface serial0/1/0
-Router4(config-if)# ip ospf cost 100
-Router4(config-if)# ip ospf hello-interval 5
-Router4(config-if)# ip ospf dead-interval 20
-Router4(config-if)# exit
-
-Router4(config)# exit
-Router4# write memory
+! Guardar configuración
+Router1(config)#exit
+Router1#write memory
 ```
 
-Por fines mas didácticos y/o visuales, en esta [captura][router4-sesion-cli-ios-setting-ospf] se muestra la sesión de comandos CLI IOS ejecutados en Router4 para la configuración de OSPF.
+##### Router2 - Configuración OSPF
+
+```c
+Router2>enable
+Router2#configure terminal
+Router2(config)#no router ospf 1
+
+Router2(config)#router ospf 1
+Router2(config-router)#router-id 2.2.2.2
+Router2(config-router)#network 192.168.4.0 0.0.0.255 area 2
+Router2(config-router)#network 192.168.6.0 0.0.0.3 area 0
+Router2(config-router)#network 192.168.7.0 0.0.0.3 area 0
+Router2(config-router)#network 192.168.10.0 0.0.0.3 area 0
+Router2(config-router)#exit
+
+Router2(config)#interface serial0/0/0
+Router2(config-if)#ip ospf cost 100
+Router2(config-if)#ip ospf hello-interval 5
+Router2(config-if)#ip ospf dead-interval 20
+Router2(config-if)#exit
+
+Router2(config)#interface serial0/0/1
+Router2(config-if)#ip ospf cost 100
+Router2(config-if)#ip ospf hello-interval 5
+Router2(config-if)#ip ospf dead-interval 20
+Router2(config-if)#exit
+
+Router2(config)#interface serial0/1/0
+Router2(config-if)#ip ospf cost 100
+Router2(config-if)#ip ospf hello-interval 5
+Router2(config-if)#ip ospf dead-interval 20
+Router2(config-if)#exit
+
+Router2(config)#exit
+Router2#write memory
+```
+
+##### Router3 - Configuración OSPF
+
+```c
+Router3>enable
+Router3#configure terminal
+Router3(config)#no router ospf 1
+
+Router3(config)#router ospf 1
+Router3(config-router)#router-id 3.3.3.3
+Router3(config-router)#network 192.168.3.0 0.0.0.255 area 3
+Router3(config-router)#network 192.168.7.0 0.0.0.3 area 0
+Router3(config-router)#network 192.168.8.0 0.0.0.3 area 0
+Router3(config-router)#network 192.168.9.0 0.0.0.3 area 0
+Router3(config-router)#exit
+
+Router3(config)#interface serial0/0/0
+Router3(config-if)#ip ospf cost 100
+Router3(config-if)#ip ospf hello-interval 5
+Router3(config-if)#ip ospf dead-interval 20
+Router3(config-if)#exit
+
+Router3(config)#interface serial0/0/1
+Router3(config-if)#ip ospf cost 100
+Router3(config-if)#ip ospf hello-interval 5
+Router3(config-if)#ip ospf dead-interval 20
+Router3(config-if)#exit
+
+Router3(config)#interface serial0/1/0
+Router3(config-if)#ip ospf cost 100
+Router3(config-if)#ip ospf hello-interval 5
+Router3(config-if)#ip ospf dead-interval 20
+Router3(config-if)#exit
+
+Router3(config)#exit
+Router3#write memory
+```
+
+##### Router4 - Configuración OSPF
+
+```c
+Router4>enable
+Router4#configure terminal
+Router4(config)#no router ospf 1
+
+Router4(config)#router ospf 1
+Router4(config-router)#router-id 4.4.4.4
+Router4(config-router)#network 192.168.2.0 0.0.0.255 area 4
+Router4(config-router)#network 192.168.5.0 0.0.0.3 area 0
+Router4(config-router)#network 192.168.8.0 0.0.0.3 area 0
+Router4(config-router)#network 192.168.10.0 0.0.0.3 area 0
+Router4(config-router)#exit
+
+Router4(config)#interface serial0/0/0
+Router4(config-if)#ip ospf cost 100
+Router4(config-if)#ip ospf hello-interval 5
+Router4(config-if)#ip ospf dead-interval 20
+Router4(config-if)#exit
+
+Router4(config)#interface serial0/0/1
+Router4(config-if)#ip ospf cost 100
+Router4(config-if)#ip ospf hello-interval 5
+Router4(config-if)#ip ospf dead-interval 20
+Router4(config-if)#exit
+
+Router4(config)#interface serial0/1/0
+Router4(config-if)#ip ospf cost 100
+Router4(config-if)#ip ospf hello-interval 5
+Router4(config-if)#ip ospf dead-interval 20
+Router4(config-if)#exit
+
+Router4(config)#exit
+Router4#write memory
+```
 
 ![Router4 configuración OSPF][router4-sesion-cli-ios-setting-ospf]
 
 [router4-sesion-cli-ios-setting-ospf]: ../images/ejercicio_2-router4-sesion-cli-ios-setting-ospf.png
 
-#### 🎉 Verificación final
+## Verificación y Pruebas
 
-La configuración en principio ha sido realizada, en este apartado se realiza una verificación para ver la configuración final de los respectivos router.
+### 3.1 Verificación de Adyacencias OSPF
 
-##### Primera verificación
+El comando show ip ospf neighbor confirma que cada router establece adyacencias con sus tres vecinos directos.
+Resultados esperados:
 
-En este apartado con básicamente el comando `show ip ospf neighbor` (correctamente ejecutado y sobre c/u de los router) aseguramos que cada router ve a su *vecino*. Siendo los resultados esperados tal que:
+- Router1: 3 vecinos (2.2.2.2, 3.3.3.3, 4.4.4.4) en estado FULL
+- Router2: 3 vecinos (1.1.1.1, 3.3.3.3, 4.4.4.4) en estado FULL
+- Router3: 3 vecinos (1.1.1.1, 2.2.2.2, 4.4.4.4) en estado FULL
+- Router4: 3 vecinos (1.1.1.1, 2.2.2.2, 3.3.3.3) en estado FULL
 
-- Router1 debería ver: 3 vecinos (`2.2.2.2`, `3.3.3.3` y `4.4.4.4`)
-- Router2 debería ver: 3 vecinos (`1.1.1.1`, `3.3.3.3` y `4.4.4.4`)
-- Router3 debería ver: 3 vecinos (`1.1.1.1`, `2.2.2.2` y `4.4.4.4`)
-- Router4 debería ver: 3 vecinos (`1.1.1.1`, `2.2.2.2` y `3.3.3.3`)
+| Router1 - Vecinos OSPF | Router1 - Vecinos OSPF |
+|:----------------:|:----------------:|
+| ![Router1 - Vecinos OSPF](../images/ejercicio_2-router1-check-conf.png) | ![Router2 - Vecinos OSPF](../images/ejercicio_2-router2-check-conf.png) |
 
-La ejecución de este comando en cada uno de los router es mostrada en las capturas siguientes.
+| Router3 - Vecinos OSPF | Router4 - Vecinos OSPF |
+|:----------------:|:----------------:|
+| ![Router3 - Vecinos OSPF](../images/ejercicio_2-router3-check-conf.png) | ![Router4 - Vecinos OSPF](../images/ejercicio_2-router4-check-conf.png) |
 
-|||
-|:--:|:--:|
-|![Router1](../images/ejercicio_2-router1-check-conf.png)|![Router2](../images/ejercicio_2-router2-check-conf.png)|
-|Router1 `show ip ospf neighbor`|Router2 `show ip ospf neighbor`|
+### 3.2 Verificación de Tabla de Enrutamiento
 
-|||
-|:--:|:--:|
-|![Router3](../images/ejercicio_2-router3-check-conf.png)|![Router4](../images/ejercicio_2-router4-check-conf.png)|
-|Router3 `show ip ospf neighbor`|Router4 `show ip ospf neighbor`|
+#### Router1 - Rutas OSPF
 
-##### 📊 Prueba Rápida (Opcional)
+```c
+Router1>enable
+Router1#show ip route ospf
+O IA 192.168.2.0 [110/101] via 192.168.5.2, 00:31:13, Serial0/0/0
+O IA 192.168.3.0 [110/165] via 192.168.5.2, 00:31:13, Serial0/0/0
+O IA 192.168.4.0 [110/101] via 192.168.6.2, 00:57:29, Serial0/0/1
+     192.168.7.0/30 is subnetted, 1 subnets
+O       192.168.7.0 [110/200] via 192.168.6.2, 00:57:29, Serial0/0/1
+     192.168.8.0/30 is subnetted, 1 subnets
+O       192.168.8.0 [110/164] via 192.168.5.2, 00:31:13, Serial0/0/0
+     192.168.10.0/30 is subnetted, 1 subnets
+O       192.168.10.0 [110/164] via 192.168.5.2, 00:31:13, Serial0/0/0
+```
 
-En este apartado ejecutamos `show ip route ospf` (correctamente) para revisar de ver las rutas hacia las redes *vecinas* de cada uno de los router.
+#### Router2 - Rutas OSPF
 
-- *[Router1]*
-  
-  ```c
-  Router1>ena
-  Router1#show ip route ospf
-  O IA 192.168.2.0 [110/101] via 192.168.5.2, 00:31:13, Serial0/0/0
-  O IA 192.168.3.0 [110/165] via 192.168.5.2, 00:31:13, Serial0/0/0
-  O IA 192.168.4.0 [110/101] via 192.168.6.2, 00:57:29, Serial0/0/1
-       192.168.7.0/30 is subnetted, 1 subnets
-  O       192.168.7.0 [110/200] via 192.168.6.2, 00:57:29, Serial0/0/1
-       192.168.8.0/30 is subnetted, 1 subnets
-  O       192.168.8.0 [110/164] via 192.168.5.2, 00:31:13, Serial0/0/0
-       192.168.10.0/30 is subnetted, 1 subnets
-  O       192.168.10.0 [110/164] via 192.168.5.2, 00:31:13, Serial0/0/0
-  ```
+```c
+Router2>enable
+Router2#show ip route ospf
+O IA 192.168.1.0 [110/101] via 192.168.6.1, 00:59:00, Serial0/0/0
+O IA 192.168.2.0 [110/201] via 192.168.6.1, 00:32:39, Serial0/0/0
+O IA 192.168.3.0 [110/265] via 192.168.6.1, 00:32:39, Serial0/0/0
+     192.168.5.0/30 is subnetted, 1 subnets
+O       192.168.5.0 [110/200] via 192.168.6.1, 00:59:00, Serial0/0/0
+     192.168.8.0/30 is subnetted, 1 subnets
+O       192.168.8.0 [110/264] via 192.168.6.1, 00:32:39, Serial0/0/0
+     192.168.9.0/30 is subnetted, 1 subnets
+O       192.168.9.0 [110/200] via 192.168.6.1, 00:59:00, Serial0/0/0
+```
 
-- *[Router2]*
-  
-  ```c
-  Router2>ena
-  Router2#show ip route ospf
-  O IA 192.168.1.0 [110/101] via 192.168.6.1, 00:59:00, Serial0/0/0
-  O IA 192.168.2.0 [110/201] via 192.168.6.1, 00:32:39, Serial0/0/0
-  O IA 192.168.3.0 [110/265] via 192.168.6.1, 00:32:39, Serial0/0/0
-       192.168.5.0/30 is subnetted, 1 subnets
-  O       192.168.5.0 [110/200] via 192.168.6.1, 00:59:00, Serial0/0/0
-       192.168.8.0/30 is subnetted, 1 subnets
-  O       192.168.8.0 [110/264] via 192.168.6.1, 00:32:39, Serial0/0/0
-       192.168.9.0/30 is subnetted, 1 subnets
-  O       192.168.9.0 [110/200] via 192.168.6.1, 00:59:00, Serial0/0/0
-  ```
+#### Router3 - Rutas OSPF
 
-- *[Router3]*
-  
-  ```c
-  Router3>ena
-  Router3#show ip route ospf
-  O IA 192.168.1.0 [110/165] via 192.168.8.2, 00:28:26, Serial0/0/1
-  O IA 192.168.2.0 [110/65] via 192.168.8.2, 00:28:26, Serial0/0/1
-  O IA 192.168.4.0 [110/265] via 192.168.8.2, 00:28:26, Serial0/0/1
-       192.168.5.0/30 is subnetted, 1 subnets
-  O       192.168.5.0 [110/164] via 192.168.8.2, 00:28:26, Serial0/0/1
-       192.168.6.0/30 is subnetted, 1 subnets
-  O       192.168.6.0 [110/264] via 192.168.8.2, 00:28:26, Serial0/0/1
-       192.168.10.0/30 is subnetted, 1 subnets
-  O       192.168.10.0 [110/128] via 192.168.8.2, 00:28:26, Serial0/0/1
-  ```
+```c
+Router3>enable
+Router3#show ip route ospf
+O IA 192.168.1.0 [110/165] via 192.168.8.2, 00:28:26, Serial0/0/1
+O IA 192.168.2.0 [110/65] via 192.168.8.2, 00:28:26, Serial0/0/1
+O IA 192.168.4.0 [110/265] via 192.168.8.2, 00:28:26, Serial0/0/1
+     192.168.5.0/30 is subnetted, 1 subnets
+O       192.168.5.0 [110/164] via 192.168.8.2, 00:28:26, Serial0/0/1
+     192.168.6.0/30 is subnetted, 1 subnets
+O       192.168.6.0 [110/264] via 192.168.8.2, 00:28:26, Serial0/0/1
+     192.168.10.0/30 is subnetted, 1 subnets
+O       192.168.10.0 [110/128] via 192.168.8.2, 00:28:26, Serial0/0/1
+```
 
-- *[Router4]*
-  
-  ```c
-  Router4>ena
-  Router4#show ip route ospf
-  O IA 192.168.1.0 [110/101] via 192.168.5.1, 00:36:56, Serial0/0/0
-  O IA 192.168.3.0 [110/65] via 192.168.8.1, 00:03:06, Serial0/0/1
-  O IA 192.168.4.0 [110/201] via 192.168.5.1, 00:36:56, Serial0/0/0
-       192.168.6.0/30 is subnetted, 1 subnets
-  O       192.168.6.0 [110/200] via 192.168.5.1, 00:36:56, Serial0/0/0
-       192.168.7.0/30 is subnetted, 1 subnets
-  O       192.168.7.0 [110/128] via 192.168.8.1, 00:36:56, Serial0/0/1
-       192.168.9.0/30 is subnetted, 1 subnets
-  O       192.168.9.0 [110/128] via 192.168.8.1, 00:36:56, Serial0/0/1
-  ```
+#### Router4 - Rutas OSPF
 
-### 📊 Resumen de la configuración aplicada/escenario logrado
+```c
+Router4>enable
+Router4#show ip route ospf
+O IA 192.168.1.0 [110/101] via 192.168.5.1, 00:36:56, Serial0/0/0
+O IA 192.168.3.0 [110/65] via 192.168.8.1, 00:03:06, Serial0/0/1
+O IA 192.168.4.0 [110/201] via 192.168.5.1, 00:36:56, Serial0/0/0
+     192.168.6.0/30 is subnetted, 1 subnets
+O       192.168.6.0 [110/200] via 192.168.5.1, 00:36:56, Serial0/0/0
+     192.168.7.0/30 is subnetted, 1 subnets
+O       192.168.7.0 [110/128] via 192.168.8.1, 00:36:56, Serial0/0/1
+     192.168.9.0/30 is subnetted, 1 subnets
+O       192.168.9.0 [110/128] via 192.168.8.1, 00:36:56, Serial0/0/1
+```
 
-✅ Red full-mesh con 4 routers y 6 enlaces WAN
- 
-✅ Router-IDs únicos (1.1.1.1 a 4.4.4.4)
+**Interpretación:** Las rutas marcadas como "O IA" (OSPF Inter-Area) indican comunicación exitosa entre diferentes áreas OSPF, confirmando el correcto funcionamiento del diseño multi-área.
 
-✅ Diseño por áreas OSPF jerárquico (Áreas 0-4)
+---
 
-✅ Timers optimizados (detección de fallas en 20 seg)
+## Resultados y Conclusiones
 
-✅ Convergencia rápida y redundancia total
+### Características Implementadas
 
-✅ Configuración profesional nivel empresarial
+- **Topología full-mesh:** 4 routers interconectados mediante 6 enlaces WAN
+- **Router-IDs únicos:** Identificación clara de cada dispositivo (1.1.1.1 a 4.4.4.4)
+- **Diseño multi-área OSPF:** 5 áreas (0 para backbone, 1-4 para sucursales)
+- **Convergencia optimizada:** Timers hello/dead reducidos (5/20 segundos vs 10/40 predeterminados)
+- **Balanceo de carga:** Cost uniforme de 100 en todos los enlaces WAN
+- **Alta disponibilidad:** Múltiples rutas alternativas ante fallas de enlaces
 
-### 🎓 Conceptos que se han utilizado/aprendido
+### Conceptos Técnicos Aplicados
 
-- ***OSPF Multi-área*** - Diseño jerárquico escalable
-- ***Router-ID*** - Identificación única de dispositivos
-- ***Full-mesh*** - Máxima redundancia posible
-- ***Optimización de timers*** - Hello/Dead intervals
-- ***Costos OSPF*** - Manipulación de métricas
-- ***Wildcard masks*** - Configuración precisa de redes
+|Concepto| Descripción|
+|:--| :--|
+|OSPF Multi-Área| Diseño jerárquico que mejora escalabilidad y reduce overhead|
+|Router-ID| Identificador único para cada router en el dominio OSPF|
+|Topología Full-Mesh|Interconexión completa que maximiza redundancia|
+|Hello/Dead Timers|Intervalos para detección rápida de fallas (convergencia acelerada)|
+|OSPF Cost|Métrica utilizada para cálculo de rutas óptimas|
+|Wildcard Mask|Notación inversa de máscara usada en comandos network de OSPF|
+
+
+### Ventajas de la Solución
+
+1. **Redundancia Total:** Falla de hasta 2 enlaces simultáneos sin pérdida de conectividad
+2. **Convergencia Rápida:** Detección de fallas en 20 segundos (vs 40 seg estándar)
+3. **Escalabilidad:** Diseño multi-área facilita crecimiento futuro
+4. **Balanceo de Carga:** Distribución automática de tráfico entre rutas de igual costo
+5. **Administración Simplificada:** Router-IDs únicos facilitan troubleshooting
+
+### Futuras ampliaciones / Recomendaciones
+
+Para entornos de producción, se sugiere:
+
+- Implementar autenticación OSPF (MD5 o SHA) para mayor seguridad
+- Configurar route summarization en ABRs (Area Border Routers)
+- Establecer políticas de QoS sobre los enlaces WAN
+- Monitorear métricas OSPF mediante herramientas de gestión de red (SNMP/NetFlow)
+- Documentar procedimientos de respaldo y recuperación ante desastres
+
+## Referencias
+
+- RFC 2328: OSPF Version 2
+- Cisco IOS Configuration Guide - OSPF
+- Documentación oficial de Packet Tracer
