@@ -1,9 +1,11 @@
 {
   "livePreview": true,
-  "newFileLocation": "folder",
-  "newFileFolderPath": "Notes",
+  "newFileLocation": "current",
+  "newFileFolderPath": "notes",
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "Attachments",
   "showInlineTitle": false,
-  "readableLineLength": false
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "propertiesInDocument": "source"
 }

@@ -1,7 +1,8 @@
 /Journal/
-#/+/
+/+/
 /x/*
 !/x/Templater/
+IFCT79/
 *.drawio.bkp
 *.drawio.dtmp
-/Notes/*.pdf
+*.pdf

@@ -5,6 +5,6 @@
   "showWeeklyNote": true,
   "weeklyNoteFormat": "",
   "weeklyNoteTemplate": "x/Templater/weekly-template.md",
-  "weeklyNoteFolder": "Journal/Weekly",
+  "weeklyNoteFolder": "journal/Weekly",
   "localeOverride": "system-default"
 }

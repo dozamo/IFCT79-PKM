@@ -4,4 +4,5 @@
 - [[IPv4 Subnetting - ejemplo 172.31.1.0_24]]
 - [[IPv4 Subnetting - ejemplo completo simple]]
 - 
-- 
+- [[Calculadora CIDR en Google Sheet]]
+- [[KVM - virsh]]

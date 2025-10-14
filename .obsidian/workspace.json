@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7fc9c841281a854f",
+        "id": "e018d0bebbabd158",
         "type": "tabs",
         "children": [
           {
-            "id": "4ef8492e0109e502",
+            "id": "3026ecc6d427a074",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "virtualization/Eliminación de guest - eliminación de un dominio o VM.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Eliminación de guest - eliminación de un dominio o VM"
             }
           }
         ]
@@ -29,7 +33,7 @@
       {
         "id": "52f7b940caa7fd9c",
         "type": "tabs",
-        "dimension": 73.02504816955684,
+        "dimension": 69.1073219658977,
         "children": [
           {
             "id": "e0cd9660f83d3f41",
@@ -76,7 +80,7 @@
       {
         "id": "f6840dfef8d5109a",
         "type": "tabs",
-        "dimension": 26.97495183044316,
+        "dimension": 30.892678034102307,
         "children": [
           {
             "id": "8009b8411961b0e1",
@@ -92,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 376.5
+    "width": 535.5
   },
   "right": {
     "id": "d950d84b06762f0a",
@@ -217,11 +221,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/2025-10-03-003_ejercicios-subnetting-CIDR-VLSM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 2025-10-03-003_ejercicios-subnetting-CIDR-VLSM"
             }
           }
         ],
@@ -246,7 +251,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -261,53 +267,52 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "4ef8492e0109e502",
+  "active": "3026ecc6d427a074",
   "lastOpenFiles": [
-    "+/IFCT79/Ruben-profesor/PC-FTP/Tutorias.jpeg",
-    "+/IFCT79/Ruben-profesor/PC-FTP/SW/Packet_Tracer822_64bit_setup_signed.exe",
-    "+/IFCT79/Ruben-profesor/PC-FTP/SW",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Modulo 1/Tema_1.1.pdf",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Modulo 1/Medios_de_transmision.pdf",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Modulo 1/Dominio de Active Directory o Directorio Activo desde cero en Windows Server 2022.pdf",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Modulo 1",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/a resolver.pkt",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/a Resolver.pdf",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/Thumbs.db",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/Ejercicio_2.png",
-    "+/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/Ejercicio_1_estatico.pkt",
-    "+/IFCT79/Ruben-profesor/Tutorias.jpeg",
-    "+/IFCT79/Ruben-profesor/Ejercicios/Ejercicio_2.png",
-    "+/IFCT79/Ejercicios/Ejercicio_2.png",
-    "+/IFCT79/Tutorias.jpeg",
-    "+/PC-Ruben-profesor/Ejercicios/Ejercicio_2.png",
-    "+/PC-Ruben-profesor/Tutorias.jpeg",
-    "x/PC-Ruben-profesor/Ejercicios/Ejercicio_2.png",
-    "x/PC-Ruben-profesor/Tutorias.jpeg",
-    "x/pc-Ruben-profesor/Tutorias.jpeg",
-    "Notes/ej_2025-09-29_subnetting.md",
-    "Journal/Daily/2025-09-27.md",
+    "virtualization/Definición de bridge.md",
+    "virtualization/Eliminación de guest - eliminación de un dominio o VM.md",
+    "Attachments/lab2.drawio",
+    "Attachments/Pasted image 20251007130330.png",
+    "Attachments/Pasted image 20251007125914.png",
+    "Attachments/Pasted image 20251003174021.png",
+    "Attachments/Pasted image 20251003173827.png",
+    "Attachments/Pasted image 20251003172609.png",
+    "Attachments/Pasted image 20251003161311.png",
+    "Attachments/IFCT79-PKM.drawio",
+    "Attachments",
+    "IFCT79/attachments/ejercicio_2.v2025-10-02.pkt",
+    "IFCT79/attachments/ejercicio_2.docx",
+    "IFCT79/attachments/2025-09-29_subnetting.pdf",
+    "IFCT79/attachments/objetivo.ejercicio.drawio",
+    "IFCT79/images",
+    "IFCT79/attachments",
+    "Journal/Daily/2025-10-01 1.md",
     "Journal/Daily/2025-09-30.md",
-    "Notes/2025-09-29.md",
-    "Notes/Monday, 29 September 2025.md",
-    "Notes/2025-09-29Monday, 29 September 2025.md",
-    "x/Templater/daily-template.md",
+    "Journal/Daily/2025-09-27.md",
+    "Journal/Yearly",
     "Journal/Pomodoro tasks.md",
-    "Notes/2025-W40.md",
-    "x/Templater/weekly-template.md",
-    "x/Templater/monthly-template.md",
-    "x/Templater/yearly-template.md",
-    "x/Templater/Untitled.md",
-    "People/Marco Serafini.md",
     "Journal/Pomodoro Log.md",
-    "Notes/IPv4 Subnetting - ejemplo 172.31.1.0_24.md",
-    "Notes/IPv4 Subnetting - Guía de cálculo.md",
-    "Notes/000_Index.md",
-    "+/Drawing 2025-09-27 14.50.23.excalidraw.md",
-    "README.md",
-    "+/Desarrollo de mi PKM.md",
-    "Notes/www.googlecalendar.com.md",
-    "Notes/Desarrollo.md",
-    "Notes/devel - debug.md",
-    "Notes/2025-W37.md"
+    "IFCT79/vlsm_200.200.100.0.md",
+    "IFCT79/vlsm_192.168.1.0_24.md",
+    "IFCT79/vlsm_192.168.1.0_16.md",
+    "IFCT79/vlsm_172.16.0.0_16.md",
+    "IFCT79/vlsm_172.16.0.0_16-2.md",
+    "IFCT79/vlsm.md",
+    "IFCT79/subnetting.respuesta-002.md",
+    "IFCT79/subnetting.respuesta-001.md",
+    "IFCT79/subnetting.ejercicio.md",
+    "IFCT79/realizar_el_siguiente_ejercicio_de_subredes.md",
+    "IFCT79/objetivo.respuesta-001.md",
+    "IFCT79/objetivo.ejercicio.md",
+    "IFCT79/ejercicio_2.md",
+    "virtualization/Eliminación de guest - eliminación de un dominio.md",
+    "virtualization/KVM - virsh.md",
+    "notes/Spread Google sheet - calculadora CIDR - ChatGPT 2025-07-10  - chat part 2.md",
+    "notes/IPv4 Subnetting CIDR.md",
+    "notes/000_Index.md",
+    "attachments/Pasted image 20251007130330.png",
+    "attachments/Pasted image 20251007125914.png",
+    "attachments/Pasted image 20251003174021.png",
+    "attachments/Pasted image 20251003173827.png"
   ]
 }
