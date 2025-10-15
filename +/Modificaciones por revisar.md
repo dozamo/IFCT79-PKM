@@ -1,1 +1,0 @@
-- [ ] Instalar/cambiar fuente en bóveda de Obsidian

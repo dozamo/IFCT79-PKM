@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiImage",
-      "TiPaperclip",
+      "LiLibraryBig",
       "LiInbox",
-      "SiCanvas",
-      "TiTemplate"
+      "LiNotebookPen",
+      "TiCategory",
+      "LiCalendar"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -42,10 +42,6 @@
     "iconName": "TiMoodHappy",
     "iconColor": "#010aff"
   },
-  "Notes": {
-    "iconName": "TiNotes",
-    "iconColor": "#010aff"
-  },
   "x": {
     "iconName": "SiExpertsexchange",
     "iconColor": "#010aff"
@@ -58,9 +54,21 @@
     "iconName": "SiCanvas",
     "iconColor": "#010aff"
   },
-  "+": {
+  "Journal": {
+    "iconName": "LiCalendar",
+    "iconColor": "#010aff"
+  },
+  "_Inbox": {
     "iconName": "LiInbox",
     "iconColor": "#010aff"
   },
-  "images": "LiImage"
+  "Notes": {
+    "iconName": "LiNotebookPen",
+    "iconColor": "#010aff"
+  },
+  "Library": {
+    "iconName": "TiCategory",
+    "iconColor": "#010aff"
+  },
+  "Library/images": "LiImage"
 }
