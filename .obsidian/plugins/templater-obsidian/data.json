@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "",
+  "templates_folder": "x/templater",
   "templates_pairs": [
     [
       "",
@@ -12,25 +12,8 @@
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "",
-  "enable_folder_templates": true,
-  "folder_templates": [
-    {
-      "folder": "Journal/Daily",
-      "template": "x/Templater/daily-template.md"
-    },
-    {
-      "folder": "Journal/Weekly",
-      "template": ""
-    },
-    {
-      "folder": "Journal/Monthly",
-      "template": "x/Templater/monthly-template.md"
-    },
-    {
-      "folder": "Journal/Yearly",
-      "template": "x/Templater/yearly-template.md"
-    }
-  ],
+  "enable_folder_templates": false,
+  "folder_templates": [],
   "enable_file_templates": false,
   "file_templates": [
     {

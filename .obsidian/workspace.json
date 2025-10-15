@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1e6c164077acc7b4",
+        "id": "e4ba47c8315737e2",
         "type": "tabs",
         "children": [
           {
-            "id": "2c3308640b261b6f",
+            "id": "dbf7a373d6383cf3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -29,7 +29,6 @@
       {
         "id": "52f7b940caa7fd9c",
         "type": "tabs",
-        "dimension": 79.93981945837513,
         "children": [
           {
             "id": "e0cd9660f83d3f41",
@@ -69,23 +68,6 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
-            }
-          }
-        ]
-      },
-      {
-        "id": "f6840dfef8d5109a",
-        "type": "tabs",
-        "dimension": 20.060180541624874,
-        "children": [
-          {
-            "id": "8009b8411961b0e1",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
             }
           }
         ]
@@ -263,8 +245,14 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "2c3308640b261b6f",
+  "active": "dbf7a373d6383cf3",
   "lastOpenFiles": [
+    "Notes/Untitled.md",
+    "Notes/Untitled 2.md",
+    "Notes/Untitled 1.md",
+    "journal/Daily/2025-10-24.md",
+    "journal/Daily",
+    "journal",
     "Journal/++ About Journal ++.md",
     "Notes/Spread Google sheet - calculadora CIDR - ChatGPT 2025-07-10  - chat part 9.md",
     "Notes/Spread Google sheet - calculadora CIDR - ChatGPT 2025-07-10  - chat part 8.md",
@@ -292,15 +280,9 @@
     "Notes/IFCT79/vlsm_200.200.100.0.md",
     "Notes/IFCT79/vlsm_192.168.1.0_24.md",
     "Notes/IFCT79/vlsm_192.168.1.0_16.md",
-    "Notes/IFCT79/vlsm_172.16.0.0_16.md",
-    "Notes/IFCT79/vlsm_172.16.0.0_16-2.md",
-    "Notes/IFCT79/vlsm.md",
-    "Notes/IFCT79/subnetting.respuesta-002.md",
     "Notes/IFCT79/subnetting.ejercicio.drawio",
     "Notes/IFCT79/objetivo.ejercicio.drawio",
     "Notes/IFCT79/images",
-    "Notes/IFCT79/ej3",
-    "Notes/IFCT79/attachments",
     "Library/IFCT79/Ruben-profesor/PC-FTP/Ejercicios/Ejercicio_2.png",
     "Library/IFCT79/Ruben-profesor/PC-FTP/Tutorias.jpeg",
     "_Inbox/Ejercicio_2.png",
