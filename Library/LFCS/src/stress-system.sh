@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Script de shell que genera carga intensiva en la CPU, la memoria y el disco. 
+# Es un proceso iterativo/infinito, perfecto para practicar la supervisión y la gestión de recursos del sistema.
+
 echo "Iniciando script de estrés del sistema..."
 echo "Presiona Ctrl+C para detenerlo en cualquier momento."
 

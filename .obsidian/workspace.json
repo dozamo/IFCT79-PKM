@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e4ba47c8315737e2",
+        "id": "d2bc5aac2b0cd8e1",
         "type": "tabs",
         "children": [
           {
-            "id": "dbf7a373d6383cf3",
+            "id": "6668a06468464860",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -245,8 +245,9 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "dbf7a373d6383cf3",
+  "active": "6668a06468464860",
   "lastOpenFiles": [
+    "Notes/000_Index.md",
     "Notes/Untitled.md",
     "Notes/Untitled 2.md",
     "Notes/Untitled 1.md",
@@ -279,7 +280,6 @@
     "Notes/IFCT79/vlsm_200.200.100.0.pdf",
     "Notes/IFCT79/vlsm_200.200.100.0.md",
     "Notes/IFCT79/vlsm_192.168.1.0_24.md",
-    "Notes/IFCT79/vlsm_192.168.1.0_16.md",
     "Notes/IFCT79/subnetting.ejercicio.drawio",
     "Notes/IFCT79/objetivo.ejercicio.drawio",
     "Notes/IFCT79/images",
